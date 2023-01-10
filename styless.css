@@ -726,8 +726,11 @@ section:nth-child(2n+1)
 
     .left-image
     {
-        left:40%
+        left:50%
     }
+    .right-image
+    {
+        left:20%;
     /*Contact form and my details*/
     #contact-form 
     {
