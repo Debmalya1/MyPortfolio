@@ -478,7 +478,7 @@ section:nth-child(2n+1)
 .right-image
 {
     position:absolute;
-    width:40px;
+    width:50px;
     margin-left:200px;
     overflow:hidden;
     margin-top:20px;
