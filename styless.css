@@ -233,12 +233,17 @@ section:nth-child(2n+1)
 
 .mb-orange
 {
-    background-color: orange;
+    background-color: #ec4d1c;
 }
 
 .mb-purple
 {
-    background-color: purple;
+    background-color: #851a6e;
+}
+
+.mb-green
+{
+    background-color: #0b8176;
 }
 
 .eighty-percent
@@ -262,6 +267,12 @@ section:nth-child(2n+1)
 .ten-percent
 {
     width:10%;
+    height:inherit;
+}
+
+.fifty-percent
+{
+    width:50%;
     height:inherit;
 }
 
