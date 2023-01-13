@@ -270,6 +270,7 @@ section:nth-child(2n+1)
     font-size: 1rem;
     color:white;
     margin-left: 5px;
+    vertical-align: middle;
 }
 /*Immediate div inside skills-progress class can be immplemented by this*/
 .skills-progress>div
