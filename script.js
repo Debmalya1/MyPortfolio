@@ -1,3 +1,4 @@
+//smooth scroll implementation
 var navmenuAnchorTags=document.querySelectorAll('.nav-menu a');
 //console.log(navmenuAnchorTags);
 
@@ -51,4 +52,54 @@ for(var i=0;i<navmenuAnchorTags.length;i++)
         }
     });
 }
+//Skill section animation(auto-fill)
+var progressBars=document.querySelectorAll('.skills-progress>div');
+var skillsContainer=document.getElementById('skills-container');
+var animationDone=false;
+
+function initialiseBars()
+{
+    for(let bar of progressBars)
+    {
+        bar.style.width='0%';
+    }
+}
+
+initialiseBars();
+
+function fillbars()
+{
+    for(let bar of progressBars)
+    {
+        let targetWidth=bar.getAttribute('data-bar-width');
+        let currentWidth=0;
+        let interval=setInterval(function(){
+            if(currentWidth>targetWidth)
+            {
+                clearInterval(interval);
+                return;
+            }
+            currentWidth++;
+            bar.style.width=currentWidth+ '%';
+        },10);
+    }
+}
+
+function checkScroll()
+{
+    var coordinates=skillsContainer.getBoundingClientRect();
+    if(!animationDone && coordinates.top<=window.innerHeight)
+    {
+        animationDone=true;
+        //console.log("animationDone");
+        fillbars();
+    }
+    else if(coordinates.top>window.innerHeight)
+    {
+        animationDone=false;
+        initialiseBars();
+    }
+}
+
+window.addEventListener('scroll',checkScroll);
 
