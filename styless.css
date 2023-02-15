@@ -222,9 +222,43 @@ section:nth-child(2n+1)
 {
     width:7rem;
     height:1.4rem;
+    margin-left:100px;
     background-color: gray;
     border-radius: 0.8rem;
 }
+/*Animation trying For each element in skills section*/
+/*.skills-progress:hover
+{
+    animation-name: increaseSize,translation;
+    animation-duration:1s,1s;
+    animation-iteration-count: 2,2;
+    animation-direction: alternate,alternate;
+}
+
+@keyframes translation
+{
+    from
+    {
+        left:20%;
+    }
+    to
+    {
+        left:28%;
+    }
+}
+@keyframes increaseSize
+{
+    from
+    {
+        width:7rem;
+        height:1.4rem;
+    }
+    to
+    {
+        width:15rem;
+        height:1.4rem;
+    }
+}*/
 /*common background color class*/
 .mb-blue
 {
@@ -236,14 +270,14 @@ section:nth-child(2n+1)
     background-color: #ec4d1c;
 }
 
-.mb-purple
-{
-    background-color: #851a6e;
-}
-
 .mb-green
 {
     background-color: #0b8176;
+}
+
+.mb-purple
+{
+    background-color: #851a6e;
 }
 
 .eighty-percent
@@ -738,11 +772,12 @@ section:nth-child(2n+1)
 
     .left-image
     {
-        left:55%
+        left:50%
     }
+
     .right-image
     {
-        left:17%;
+        left:10%;
     }
     /*Contact form and my details*/
     #contact-form 
