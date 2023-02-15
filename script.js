@@ -19,7 +19,7 @@ for(var i=0;i<navmenuAnchorTags.length;i++)
 
             var interval=setInterval(function(){
                 var targetSectionCoordinates=targetSection.getBoundingClientRect();
-                if(targetSectionCoordinates.top<=120)
+                if(targetSectionCoordinates.top<=200)
                 {
                     clearInterval(interval);
                     return;
