@@ -7,7 +7,7 @@ body
 {
     height: 75vh;
     /*opacity:0.8;*/
-    background-image: url(image22.jpeg);
+    background-image: url(Image22.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -534,6 +534,62 @@ section:nth-child(2n+1)
 {
     width:100%;
 }
+
+/* Portfolio Section */
+
+#portfolio-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 50px;
+    margin-bottom: 20px;
+    justify-content: space-around;
+}
+
+.portfolio-image-container {
+    max-width: 300px;
+    margin: 30px;
+    overflow: hidden;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.portfolio-image-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio-details {
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    color: transparent; /*will be visible text only on hovering*/
+    text-align: center;
+    padding: 10px;
+    font-weight: 900;
+}
+
+.portfolio-image-container:hover {
+    box-shadow: 0 0 20px #74ADC8;
+}
+
+.portfolio-image-container:hover .portfolio-details {
+    background-color: #80808078;
+    color:black;
+    font-weight: 900;
+}
+
+#project-title
+{
+    color:black;
+    font-weight: 900;
+    font-size: larger;
+}
+
 /*Coding experience(continued)*/
 .codechef
 {
